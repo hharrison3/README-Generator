@@ -4,6 +4,7 @@ const api = {
   getUser(username) {
     axios.get(`https://api.github.com/users/${username}`)
   .then((res) => {
+    console.log(res.data)
     const profileimg = res.data.avatar_url;
     return profileimg
   });
