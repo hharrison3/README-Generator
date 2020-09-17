@@ -1,14 +1,10 @@
+// require dependencies
 const axios = require('axios');
-
-const api = {
-  getUser(username) {
-    axios.get(`https://api.github.com/users/${username}`)
-  .then((res) => {
-    console.log(res.data)
-    const profileimg = res.data.avatar_url;
-    return profileimg
-  });
-  }
-};
-//https://api.github.com/users/hharrison3
+// function to make API request to Github and grab picture from users github
+const api = async function(username)  {
+    const response = await axios.get(`https://api.github.com/users/${username}`)
+    const data = await response.data.avatar_url;
+    // console.log(data);
+    return data
+  };
 module.exports = api;

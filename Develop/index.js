@@ -1,8 +1,9 @@
+// require dependencies
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkDown = require("./utils/generateMarkdown");
-
+// array of questions to ask user
 const questions = [
     {
         type: "input",
@@ -56,9 +57,9 @@ const questions = [
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
-
+// when application us run, ask questions then generate markdown
 function init() {
-    inquirer.prompt(questions).then(answers => {
+    inquirer.prompt(questions).then((answers) => {
         writeToFile("README.md", generateMarkDown({...answers}));
     });
 }
