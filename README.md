@@ -1,7 +1,7 @@
 # Project Title: 
 Good README Generator 
 # Project Description: 
-The goal of this project is to create a command line application that generates a README.md from a user's input.
+The goal of this project is to create a command line application that generates a README.md from a user's input. You can find demo videos of this application in the Assets Folder.
 # Table of Contents
 * Installation
 * Usage
