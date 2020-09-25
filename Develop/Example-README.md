@@ -26,7 +26,7 @@ npm test
 What to know about using the repo: 
 This is just an example, do not use this repo
 # Contributing: 
-You cant
+You cant use this repo
 # Questions:
 If you have any questions about the repo, open an issue or contact
 me directly at harb3gaucho@gmail.com. You can find more of my work at my GitHub: hharrison3.

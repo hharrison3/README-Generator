@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
 // when application us run, ask questions then generate markdown
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        writeToFile("README.md", generateMarkDown({...answers}));
+        writeToFile("Example-README.md", generateMarkDown({...answers}));
     });
 }
 
